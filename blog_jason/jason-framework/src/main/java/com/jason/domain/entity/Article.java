@@ -1,4 +1,4 @@
-package com.jason.entity;
+package com.jason.domain.entity;
 
 import java.util.Date;
 import java.io.Serializable;

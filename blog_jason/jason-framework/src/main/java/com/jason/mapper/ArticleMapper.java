@@ -1,7 +1,7 @@
 package com.jason.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.jason.entity.Article;
+import com.jason.domain.entity.Article;
 import org.mapstruct.Mapper;
 
 /**

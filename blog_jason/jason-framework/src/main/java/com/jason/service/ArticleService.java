@@ -1,7 +1,8 @@
 package com.jason.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.jason.entity.Article;
+import com.jason.domain.ResponseResult;
+import com.jason.domain.entity.Article;
 
 /**
  * 文章表(Article)表服务接口
@@ -11,5 +12,6 @@ import com.jason.entity.Article;
  */
 public interface ArticleService extends IService<Article> {
 
+    ResponseResult hotArticleList();
 }
 

@@ -1,6 +1,7 @@
 package com.jason.controller;
 
-import com.jason.entity.Article;
+import com.jason.domain.ResponseResult;
+import com.jason.domain.entity.Article;
 import com.jason.service.ArticleService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,9 +17,13 @@ public class ArticleController {
     @Resource
     private ArticleService articleService;
 
-    @GetMapping("/list")
-    public List<Article> test(){
-        return articleService.list();
+    /**
+     * 热门文章显示
+     * */
+    @GetMapping("/hotArticleList")
+    public ResponseResult hotArticleList(){
+        ResponseResult result = articleService.hotArticleList();
+        return result;
     }
 
 
